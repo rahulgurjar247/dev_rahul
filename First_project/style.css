@@ -51,14 +51,12 @@ nav a {
     /* Add a smooth color transition */
 }
 
-/* Style the navigation links on hover */
 nav a:hover {
     color: #2b38ad;
     border-bottom: 1px solid ;
-    /* Change to your preferred hover color */
+  
 }
 
-/* Modern and sleek navbar design */
 nav {
     display: flex;
     align-items: center;
@@ -75,8 +73,6 @@ nav li {
 
 
 
-/* next css code by chatgpt */
-/* ... Previous styles ... */
 
 section {
     padding: 80px 0;
@@ -89,7 +85,6 @@ section {
     flex-wrap: wrap;
 }
 .container h2{
-    /* text-align: center; */
     padding-left: 130px;
     font-size: 30px;
      
@@ -113,28 +108,22 @@ p {
     display: inline-block;
     padding: 10px 20px;
     background: #ffd700;
-    /* Change to your preferred color */
     color: #333;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s ease;
-    /* Add a smooth background transition */
 }
 
 .cta-button:hover {
     background: #333;
-    /* Change to your preferred hover color */
     color: #fff;
 }
 
-/* ... Remaining styles ... */
 
-/* ... Previous styles ... */
 
 #portfolio {
     background: #f4f4f4;
-    /* Light gray background color */
 }
 
 .portfolio-grid {
@@ -150,14 +139,11 @@ p {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Light shadow effect */
     transition: transform 0.3s ease;
-    /* Add a smooth transform effect on hover */
 }
 
 .portfolio-item:hover {
     transform: scale(1.05);
-    /* Enlarge the item on hover */
 }
 
 .portfolio-item img {
@@ -178,13 +164,9 @@ p {
     line-height: 1.4;
 }
 
-/* ... Remaining styles ... */
-
-/* ... Previous styles ... */
 
 #skills {
     background: linear-gradient(to right, #4f9bff, #8a4fff);
-    /* Gradient background */
     color: #fff;
 }
 
@@ -199,17 +181,13 @@ p {
     margin: 20px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
-    /* Semi-transparent white background */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    /* Soft glow effect */
     transition: transform 0.3s ease;
-    /* Add a smooth transform effect on hover */
 }
 
 .skill:hover {
     transform: translateY(-5px);
-    /* Move the skill item upward on hover */
 }
 
 .skill img {
@@ -227,8 +205,6 @@ p {
     line-height: 1.4;
 }
 
-/* ... Remaining styles ... */
-/* ... Previous styles ... */
 
 #contact {
     background: #ffd700; /* Yellow background color */
@@ -305,9 +281,6 @@ p {
     max-width: 40px;
 }
 
-/* ... Remaining styles ... */
-
-/* ... Previous styles ... */
 
 #testimonials {
     background: #f9f9f9; /* Light gray background color */
@@ -345,9 +318,6 @@ p {
     color: #666;
 }
 
-/* ... Remaining styles ... */
-
-/* ... Previous styles ... */
 
 #blog {
     background: #eaeaea; /* Light background color */
@@ -386,16 +356,13 @@ p {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease; /* Add a smooth background transition */
+    transition: background 0.3s ease;
 }
 
 .article-content a:hover {
-    background: #555; /* Change to your preferred hover color */
+    background: #555; 
 }
 
-/* ... Remaining styles ... */
-
-/* ... Previous styles ... */
 
 footer {
     background: #333;
@@ -437,9 +404,6 @@ footer {
     color: #aaa;
 }
 
-/* ... Remaining styles ... */
-
-/* ... Previous styles ... */
 
 .scroll-to-top {
     position: fixed;
@@ -458,17 +422,16 @@ footer {
     background: #555;
 }
 
-/* Add styles for smooth scrolling and active section highlighting */
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 16px;
-    transition: color 0.3s ease; /* Add a smooth color transition */
+    transition: color 0.3s ease;
 }
 
 nav a:hover,
 .navbar .active a {
-    color: #ffd700; /* Change to your preferred hover or active color */
+    color: #ffd700; 
 }
 
