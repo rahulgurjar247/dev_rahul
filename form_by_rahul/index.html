@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            width: 700px;
+            margin: auto;
+            margin-top: 10vh;
+            background-color: rgb(238, 230, 230);
+
+            height: 500px;
+        }
+
+        .form h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: monospace;
+            background-color: rgb(238, 230, 230);
+
+        }
+
+        .box {
+            width: 90%;
+            margin: auto;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            width: 50%;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0px;
+            border-top: 4px solid green;
+            background-color: white;
+        }
+
+        .left:hover {
+            cursor: pointer;
+        }
+
+        .right {
+            width: 50%;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0px;
+
+        }
+
+        .right:hover {
+            cursor: pointer;
+        }
+
+        /* second */
+        .second {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 20px 0px;
+        }
+
+        .f1 {
+            width: 80%;
+            margin: auto;
+        }
+
+        .f1 input {
+            width: 100%;
+            border: 0.5px solid rgb(210, 210, 210);
+            border-radius: 5px;
+            font-size: 1rem;
+            padding-left: 20px;
+            height: 40px;
+            background-color: white;
+
+        }
+
+        .f2 {
+            width: 80%;
+            background-color: white;
+            margin: auto;
+        }
+
+        .f2 input {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+            height: 40px;
+            border: 0.5px solid rgb(210, 209, 209);
+            background-color: white;
+            font-size: 1rem;
+            padding-left: 20px;
+        }
+
+        .third {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
+        .rem {
+            width: 40%;
+            display: flex;
+            padding-left: 62px;
+            background-color: white;
+        }
+
+        .rem #checkbox {
+            width: 20px;
+            margin-right: 5px;
+            background-color: white;
+            
+        }
+        .rem #checkbox:checked{
+            border: 3px solid black;
+            box-shadow: 2px 2px 3px grey;
+            
+        }
+
+        .rem label {
+            background-color: white;
+        }
+
+        .fg {
+            width: 40%;
+            justify-content: left;
+            background-color: white;
+            display: flex;
+            justify-content: right;
+        }
+
+        .fg a {
+            background-color: white;
+            color: slategray;
+            text-decoration: none;
+        }
+
+        .button {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            padding: 15px 0px;
+
+        }
+
+        .button button {
+            width: 83%;
+            margin: auto;
+            background-color: rgb(53, 181, 53);
+            height: 45px;
+            margin-left: 10%;
+            border-radius: 7px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+
+        }
+        .button button:hover{
+            color: rgb(44, 41, 41);
+            box-shadow: 4px 4px 5px black;
+        }
+
+        .middle {
+            width: 90%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            padding: 8px 0px;
+            padding-left: 10%;
+            align-items: center;
+        }
+
+        .middle .leftline {
+            width: 40%;
+            height: 2px;
+            background-color: black;
+        }
+
+        .centerword {
+            width: 10%;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .option {
+            width: 82%;
+            margin: auto;
+            /* border: 1px solid; */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0px 9%;
+        }
+
+        .option .boxgoogle {
+            width: 48%;
+            margin: auto;
+            height: 40px;
+            border: 1px solid;
+            margin-top: 5px;
+            display: flex;
+            border-radius: 4px;
+        }
+
+        .option .boxgoogle .small {
+            width: 30%;
+            background-color: aqua;
+            border-right: 1px solid;
+        }
+
+        .option .boxgoogle .companyname{
+            width: 69%;
+            font-size: 1.3rem;
+            text-align: center;
+            padding-top: 5px;
+            font-weight: bold;
+            font-family:  sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h3>Please Login To Continue</h3>
+        <div class="box">
+            <form action="">
+                <div class="first">
+                    <div class="left">Sign In</div>
+                    <div class="right">Sign Up</div>
+                </div>
+                <div class="second">
+                    <div class="f1">
+                        <input type="text" name="name" id="namei" placeholder="<>  USER NAME OR EMAIL">
+                    </div>
+                    <div class="f2">
+                        <input type="text" name="name" id="namei" placeholder=" [ ]  PASSWORD ">
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="rem">
+                        <input type="checkbox" name="checkcheck" id="checkbox">
+                        <label for="checkbox" >Remember me</label>
+                    </div>
+                    <div class="fg"><a href="">Forgot Password</a></div>
+                </div>
+                <div class="button">
+                    <button>Sign In</button>
+                </div>
+                <div class="middle">
+                    <div class="leftline"></div>
+                    <div class="centerword">or</div>
+                    <div class="leftline"></div>
+                </div>
+                <div class="option">
+                    <div class="boxgoogle">
+                        <div class="small"></div>
+                        <div class="companyname">Google</div>
+                    </div>
+                    <div class="boxgoogle">
+                        <div class="small"></div>
+                        <div class="companyname">linkedln</div>
+                    </div>
+                    <div class="boxgoogle">
+                        <div class="small"></div>
+                        <div class="companyname">Facebook</div>
+                    </div>
+                    <div class="boxgoogle">
+                        <div class="small"></div>
+                        <div class="companyname">Github</div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
